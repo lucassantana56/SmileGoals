@@ -3,9 +3,10 @@ import { Image, View, TouchableOpacity, Text, Linking, TextInput, ImageBackgroun
 import { useNavigation, useRoute } from '@react-navigation/native'
 import { parisImg } from '../../../assets/paris.jpg';
 
-import style from "../style";
+// import style from "../style";
+import style from "./mainStyle";
 
-export default function App() {
+export default function MainMenu() {
     const navigation = useNavigation();
     const [email, setEmail] = useState();
     const [contact, setContact] = useState();
@@ -21,6 +22,7 @@ export default function App() {
     return (
 
         <View style={style.container}>
+
 
             <Text h1 style={style.title}>
                 Qual o seu destino?

@@ -4,7 +4,7 @@ import Constants from "expo-constants/src/Constants";
 export default StyleSheet.create({
     inputView: {
         width: "80%",
-        backgroundColor: "transparent",
+        backgroundColor: "orange",
         borderRadius: 5,
         height: 50,
         margin: 5,
@@ -99,4 +99,4 @@ export default StyleSheet.create({
         fontSize: 32,
         fontWeight: 'bold'
     }
-})
+});
