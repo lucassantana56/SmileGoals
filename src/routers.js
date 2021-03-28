@@ -12,7 +12,7 @@ export default function Routers() {
     return (
         <NavigationContainer>
             <StackNavigation.Navigator screenOptions={{ headerShown: false }}>
-                <StackNavigation.Screen name="Main" component={MainMenu} />
+                <StackNavigation.Screen name="MainMenu" component={MainMenu} />
                 <StackNavigation.Screen name="Register" component={Register} />
                 <StackNavigation.Screen name="Home" component={Home} />
             </StackNavigation.Navigator>

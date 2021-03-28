@@ -3,22 +3,27 @@ import Constants from "expo-constants/src/Constants";
 
 export default StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: 'orange',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    innerContainer: {
+        paddingTop: 50,
         alignItems: 'center',
         justifyContent: 'center'
     },
     title: {
         fontSize: 32,
         fontWeight: 'bold',
-        margin: 20,
+        margin: 30,
         marginLeft: 40,
         color: '#fff'
     },
     centerText: {
         display: 'flex',
         justifyContent: 'center',
-        margin: 20
+        margin: 30,
+        color: '#fff'
     },
     inputView: {
         width: "80%",
@@ -44,11 +49,13 @@ export default StyleSheet.create({
         borderColor: '#FF5A00',
         borderStyle: 'solid',
         display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        flexDirection: 'row'
     },
     innerMenuButtonText: {
         color: '#fff'
+    },
+    backgroundImage: {
+        width: '100%',
+        height: '100%',
     }
 });

@@ -4,22 +4,19 @@ import Constants from "expo-constants/src/Constants";
 export default StyleSheet.create({
     inputView: {
         width: "80%",
-        backgroundColor: "transparent",
+        backgroundColor: "#465881",
         borderRadius: 5,
         height: 50,
         margin: 5,
         justifyContent: "center",
-        padding: 20,
-        borderColor: "#FF5A00",
-        borderWidth: 1
+        padding: 20
     },
     defaultView: {
         width: "90%",
         backgroundColor: "#c6cdcc",
         borderRadius: 5,
         height: 50,
-        marginTop: 15,
-
+        marginTop: 15
     },
     inputText: {
         height: 50,
@@ -40,21 +37,28 @@ export default StyleSheet.create({
         marginTop: 5,
         marginBottom: 50
     },
+    backgroundImage: {
+            flex: 1,
+            resizeMode: "cover",
+            justifyContent: "center"
+        },
     registerBtn: {
-        width: "80%",
-        backgroundColor: "#0e00fb",
-        borderRadius: 5,
-        height: 50,
+        width: 400,
+        backgroundColor: "#FF5A00",
+        borderRadius: 2,
+        height: 60,
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 5
+        marginTop:20
     },
     container: {
-        marginTop: Constants.statusBarHeight,
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'orange',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+    },
+    containerMain:{
+        flex: 1
     },
     backBtn: {
         width: "80%",
@@ -81,7 +85,7 @@ export default StyleSheet.create({
     },
     restaurantValue: {
         marginTop: 8,
-
+        fontSize: 15,
         marginBottom: 24,
         color: '#737380'
     },
@@ -95,8 +99,21 @@ export default StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold'
     },
-    title: {
-        fontSize: 32,
-        fontWeight: 'bold'
+    baseText: {
+        fontWeight: "normal"
+    },
+    titleText: {
+        fontSize: 24,
+        fontWeight: "bold",
+        marginTop: 100,
+        marginBottom:20,
+        textAlign: 'center'
+    },
+    subtitleText: {
+        fontSize: 24,
+        marginBottom:20,
+        fontWeight: "bold",
+        marginTop: 40,
+        textAlign: 'center'
     }
 })
