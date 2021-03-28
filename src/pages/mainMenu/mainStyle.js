@@ -2,9 +2,27 @@ import { StyleSheet } from 'react-native'
 import Constants from "expo-constants/src/Constants";
 
 export default StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'orange',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    title: {
+        fontSize: 32,
+        fontWeight: 'bold',
+        margin: 20,
+        marginLeft: 40,
+        color: '#fff'
+    },
+    centerText: {
+        display: 'flex',
+        justifyContent: 'center',
+        margin: 20
+    },
     inputView: {
         width: "80%",
-        backgroundColor: "orange",
+        backgroundColor: "transparent",
         borderRadius: 5,
         height: 50,
         margin: 5,
@@ -13,90 +31,24 @@ export default StyleSheet.create({
         borderColor: "#FF5A00",
         borderWidth: 1
     },
-    defaultView: {
-        width: "90%",
-        backgroundColor: "#c6cdcc",
-        borderRadius: 5,
-        height: 50,
-        marginTop: 15,
-
-    },
-    inputText: {
-        height: 50,
-        color: "white"
-    },
-    loginBtn: {
-        width: "80%",
-        backgroundColor: "#6bfb00",
-        borderRadius: 5,
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 5,
-        marginBottom: 10
-    },
-
-    image: {
-        marginTop: 5,
-        marginBottom: 50
-    },
-    registerBtn: {
-        width: "80%",
-        backgroundColor: "#0e00fb",
-        borderRadius: 5,
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 5
-    },
-    container: {
-        marginTop: Constants.statusBarHeight,
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    backBtn: {
-        width: "80%",
-        backgroundColor: "#fb0200",
-        borderRadius: 5,
-        height: 50,
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: 5
-    },
-    restaurantList: {
-        marginTop: 40,
-    },
-    restaurant: {
-        padding: 12,
+    menuButton: {
+        width: "95%",
+        backgroundColor: "rgba(255, 90, 0, 0.3)",
         borderRadius: 8,
-        backgroundColor: '#fff',
-        marginBottom: 7,
-    },
-    restaurantProperty: {
-        fontSize: 14,
-        color: '#41414d',
-        fontWeight: 'bold'
-    },
-    restaurantValue: {
-        marginTop: 8,
-
-        marginBottom: 24,
-        color: '#737380'
-    },
-    detailsButton: {
+        height: 64,
+        alignItems: "flex-start",
+        justifyContent: "center",
+        marginTop: 5,
+        padding: 8,
+        borderWidth: 1,
+        borderColor: '#FF5A00',
+        borderStyle: 'solid',
+        display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
-    detailsButtonText: {
-        color: '#e02041',
-        fontSize: 15,
-        fontWeight: 'bold'
-    },
-    title: {
-        fontSize: 32,
-        fontWeight: 'bold'
+    innerMenuButtonText: {
+        color: '#fff'
     }
 });

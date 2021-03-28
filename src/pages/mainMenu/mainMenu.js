@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Image, View, TouchableOpacity, Text, Linking, TextInput, ImageBackground } from 'react-native'
 import { useNavigation, useRoute } from '@react-navigation/native'
+import { Feather } from '@expo/vector-icons';
 import { parisImg } from '../../../assets/paris.jpg';
 
 // import style from "../style";
@@ -22,56 +23,35 @@ export default function MainMenu() {
     return (
 
         <View style={style.container}>
-
+            <Image source={{ uri: 'assets:/smiles-logo.png' }} style={{ width: 40, height: 40 }} />
 
             <Text h1 style={style.title}>
-                Qual o seu destino?
+                Bem vindo de volta, Débora!
                 </Text>
-            <View style={style.inputView}>
-                <TextInput
-                    style={style.inputText}
-                    placeholder="Username" onChangeText={text => setUsername(text)}
-                    value={username} />
-            </View>
-            <View style={style.inputView}>
-                <TextInput
-                    style={style.inputText}
-                    placeholder="Email" onChangeText={text => setEmail(text)}
-                    value={email} />
-            </View>
 
-            <View style={style.inputView}>
-                <TextInput
-                    style={style.inputText}
-                    placeholder="Password"
-                    secureTextEntry={true}
-                    onChangeText={text => setPassword(text)}
-                    value={password} />
+            <Text style={style.centerText}>
+                Você tem 12.378 milhas
+            </Text>
 
-            </View>
 
-            <View style={style.inputView}>
-                <TextInput
-                    style={style.inputText}
-                    placeholder="Confirm pass"
-                    secureTextEntry={true}
-                    onChangeText={text => setconfirmpass(text)}
-                    value={confirmpass} />
+            <TouchableOpacity style={style.menuButton} onPress={() => register()}>
+                <Text style={style.innerMenuButtonText}>Realize o seu sonho</Text>
+                <Feather name="send" size={20} color="#fff" />
+            </TouchableOpacity>
 
-            </View>
+            <TouchableOpacity style={style.menuButton} onPress={() => register()}>
+                <Text style={style.innerMenuButtonText}>Pesquise voos, hoteis, carros </Text>
+                <Feather name="search" size={20} color="#fff" />
+            </TouchableOpacity>
 
-            <View style={style.inputView}>
-                <TextInput
-                    style={style.inputText}
-                    placeholder="Contact"
-                    placeholderTextColor=""
-                    onChangeText={text => setContact(text)}
-                    value={contact} />
-            </View>
+            <TouchableOpacity style={style.menuButton} onPress={() => register()}>
+                <Text style={style.innerMenuButtonText}>Acumule e resgate milhas</Text>
+                <Feather name="credit-card" size={20} color="#fff" />
+            </TouchableOpacity>
 
-            <TouchableOpacity style={style.registerBtn}
-                onPress={() => register()}>
-                <Text>Register</Text>
+            <TouchableOpacity style={style.menuButton} onPress={() => register()}>
+                <Text style={style.innerMenuButtonText}>Dicas Smiles</Text>
+                <Feather name="arrow-right" size={20} color="#fff" />
             </TouchableOpacity>
 
         </View>
